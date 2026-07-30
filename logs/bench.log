@@ -1,0 +1,44 @@
+2026-07-30 07:03:49,744 DEBUG cd demo && uv venv env --seed --python python3
+2026-07-30 07:03:51,820 LOG Getting frappe
+2026-07-30 07:03:51,820 DEBUG cd demo/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2026-07-30 07:04:10,374 LOG Installing frappe
+2026-07-30 07:04:10,375 DEBUG cd /home/kailai/demo && uv pip install --quiet -e /home/kailai/demo/apps/frappe  --python /home/kailai/demo/env/bin/python
+2026-07-30 07:04:16,519 DEBUG cd /home/kailai/demo/apps/frappe && yarn install --check-files
+2026-07-30 07:04:28,755 DEBUG cd demo && bench build
+2026-07-30 07:04:28,873 INFO /home/kailai/.local/bin/bench build
+2026-07-30 07:04:49,718 LOG setting up backups
+2026-07-30 07:04:49,730 LOG backups were set up
+2026-07-30 07:04:49,730 INFO Bench demo initialized
+2026-07-30 07:05:18,815 INFO /home/kailai/.local/bin/bench new-site program
+2026-07-30 07:06:35,129 INFO /home/kailai/.local/bin/bench new-app coding
+2026-07-30 07:06:35,135 LOG creating new app coding
+2026-07-30 07:07:04,543 LOG Installing coding
+2026-07-30 07:07:04,544 DEBUG cd /home/kailai/demo && uv pip install --quiet -e /home/kailai/demo/apps/coding  --python /home/kailai/demo/env/bin/python
+2026-07-30 07:07:04,940 DEBUG bench build --app coding
+2026-07-30 07:07:05,076 INFO /home/kailai/.local/bin/bench build --app coding
+2026-07-30 07:07:16,228 INFO /home/kailai/.local/bin/bench --site llist
+2026-07-30 07:07:19,107 INFO /home/kailai/.local/bin/bench --site list
+2026-07-30 07:07:43,125 INFO /home/kailai/.local/bin/bench --site program install-app coding
+2026-07-30 07:07:57,013 INFO /home/kailai/.local/bin/bench --site program list-app
+2026-07-30 07:07:58,445 INFO /home/kailai/.local/bin/bench --site program list-apps
+2026-07-30 07:08:27,434 INFO /home/kailai/.local/bin/bench start
+2026-07-30 07:08:27,713 INFO /home/kailai/.local/bin/bench serve --port 8001
+2026-07-30 07:08:27,717 INFO /home/kailai/.local/bin/bench socketio
+2026-07-30 07:08:27,720 INFO /home/kailai/.local/bin/bench schedule
+2026-07-30 07:08:27,729 INFO /home/kailai/.local/bin/bench worker
+2026-07-30 07:08:27,735 INFO /home/kailai/.local/bin/bench watch
+2026-07-30 07:09:17,759 INFO /home/kailai/.local/bin/bench --site program set-config --global developer_mode 1
+2026-07-30 07:09:29,487 INFO /home/kailai/.local/bin/bench start
+2026-07-30 07:09:29,713 INFO /home/kailai/.local/bin/bench serve --port 8001
+2026-07-30 07:09:29,721 INFO /home/kailai/.local/bin/bench schedule
+2026-07-30 07:09:29,726 INFO /home/kailai/.local/bin/bench socketio
+2026-07-30 07:09:29,731 INFO /home/kailai/.local/bin/bench watch
+2026-07-30 07:09:29,735 INFO /home/kailai/.local/bin/bench worker
+2026-07-30 07:11:31,726 INFO /home/kailai/.local/bin/bench use program
+2026-07-30 07:11:53,136 INFO /home/kailai/.local/bin/bench config serve_default_site on
+2026-07-30 07:11:56,090 INFO /home/kailai/.local/bin/bench start
+2026-07-30 07:11:56,336 INFO /home/kailai/.local/bin/bench socketio
+2026-07-30 07:11:56,342 INFO /home/kailai/.local/bin/bench serve --port 8001
+2026-07-30 07:11:56,346 INFO /home/kailai/.local/bin/bench watch
+2026-07-30 07:11:56,350 INFO /home/kailai/.local/bin/bench schedule
+2026-07-30 07:11:56,356 INFO /home/kailai/.local/bin/bench worker
