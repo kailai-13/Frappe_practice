@@ -2738,3 +2738,79 @@ alter table `tabchild table` add column if not exists parent varchar(140)
 alter table `tabchild table` add column if not exists parenttype varchar(140)
 2026-07-30 07:41:36,302 WARNING database DDL Query made to DB:
 alter table `tabchild table` add column if not exists parentfield varchar(140)
+2026-07-30 08:49:29,447 WARNING database DDL Query made to DB:
+ALTER TABLE `tabParent Doc` ADD COLUMN `full_name` varchar(140)
+2026-07-30 09:24:24,651 WARNING database DDL Query made to DB:
+ALTER TABLE `tabParent Doc` ADD COLUMN `enable` int(1) not null default 0
+2026-07-30 10:02:00,769 WARNING database DDL Query made to DB:
+create table `tabC doc` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-07-30 10:03:43,552 WARNING database DDL Query made to DB:
+ALTER TABLE `tabC doc` ADD COLUMN `child_name` varchar(140), ADD COLUMN `parent1` varchar(140)
+2026-07-30 10:06:47,122 WARNING database DDL Query made to DB:
+create table `tabc c table` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-07-30 10:08:10,931 WARNING database DDL Query made to DB:
+alter table `tabc c table` add column if not exists parent varchar(140)
+2026-07-30 10:08:10,932 WARNING database DDL Query made to DB:
+alter table `tabc c table` add column if not exists parenttype varchar(140)
+2026-07-30 10:08:10,932 WARNING database DDL Query made to DB:
+alter table `tabc c table` add column if not exists parentfield varchar(140)
+2026-07-30 10:08:10,991 WARNING database DDL Query made to DB:
+ALTER TABLE `tabc c table` ADD COLUMN `age` int(11) not null default 0, ADD COLUMN `number` int(11) not null default 0
+2026-07-30 10:09:52,824 WARNING database DDL Query made to DB:
+ALTER TABLE `tabC doc` ADD COLUMN `parent_full_name` varchar(140), ADD COLUMN `parent_age` int(11) not null default 0, ADD COLUMN `parent_address` text
+2026-07-30 10:10:53,447 WARNING database DDL Query made to DB:
+create table `tabc p list` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-07-30 10:12:23,111 WARNING database DDL Query made to DB:
+alter table `tabc p list` add column if not exists parent varchar(140)
+2026-07-30 10:12:23,111 WARNING database DDL Query made to DB:
+alter table `tabc p list` add column if not exists parenttype varchar(140)
+2026-07-30 10:12:23,111 WARNING database DDL Query made to DB:
+alter table `tabc p list` add column if not exists parentfield varchar(140)
+2026-07-30 10:12:23,171 WARNING database DDL Query made to DB:
+ALTER TABLE `tabc p list` ADD COLUMN `name1` varchar(140), ADD COLUMN `age` int(11) not null default 0, ADD COLUMN `enable` int(1) not null default 0, ADD COLUMN `address` text
