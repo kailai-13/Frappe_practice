@@ -51,3 +51,39 @@
 2026-07-30 08:51:45,293 INFO /home/kailai/.local/bin/bench schedule
 2026-07-30 08:51:45,303 INFO /home/kailai/.local/bin/bench watch
 2026-07-30 08:51:45,314 INFO /home/kailai/.local/bin/bench socketio
+2026-07-30 11:23:38,550 INFO /home/kailai/.local/bin/bench --site program list-apps
+2026-07-30 11:23:43,600 INFO /home/kailai/.local/bin/bench --site program mariadb
+2026-07-30 11:25:56,491 INFO /home/kailai/.local/bin/bench --site program mariadb
+2026-07-30 12:00:06,758 INFO /home/kailai/.local/bin/bench --verbose --site all backup
+2026-07-31 05:05:01,151 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:05:01,444 INFO /home/kailai/.local/bin/bench socketio
+2026-07-31 05:05:01,451 INFO /home/kailai/.local/bin/bench worker
+2026-07-31 05:05:01,452 INFO /home/kailai/.local/bin/bench serve --port 8001
+2026-07-31 05:05:01,454 INFO /home/kailai/.local/bin/bench watch
+2026-07-31 05:05:01,455 INFO /home/kailai/.local/bin/bench schedule
+2026-07-31 05:06:38,094 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:06:40,072 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:06:45,194 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:06:50,513 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:07:05,528 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:07:07,100 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:07:51,258 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:07:56,696 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:08:10,969 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:08:28,999 INFO /home/kailai/.local/bin/bench stop
+2026-07-31 05:08:36,761 INFO /home/kailai/.local/bin/bench build
+2026-07-31 05:09:06,587 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:09:48,051 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:10:05,776 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:10:06,006 INFO /home/kailai/.local/bin/bench serve --port 8001
+2026-07-31 05:10:06,008 INFO /home/kailai/.local/bin/bench socketio
+2026-07-31 05:10:06,009 INFO /home/kailai/.local/bin/bench worker
+2026-07-31 05:10:06,011 INFO /home/kailai/.local/bin/bench watch
+2026-07-31 05:10:06,013 INFO /home/kailai/.local/bin/bench schedule
+2026-07-31 05:13:29,157 INFO /home/kailai/.local/bin/bench start
+2026-07-31 05:13:29,562 INFO /home/kailai/.local/bin/bench serve --port 8001
+2026-07-31 05:13:29,562 INFO /home/kailai/.local/bin/bench socketio
+2026-07-31 05:13:29,571 INFO /home/kailai/.local/bin/bench worker
+2026-07-31 05:13:29,573 INFO /home/kailai/.local/bin/bench schedule
+2026-07-31 05:13:29,577 INFO /home/kailai/.local/bin/bench watch
+2026-07-31 06:00:07,627 INFO /home/kailai/.local/bin/bench --verbose --site all backup

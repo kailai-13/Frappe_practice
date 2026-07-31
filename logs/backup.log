@@ -1,0 +1,12 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_3d92a384c8ec50e6 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3d92a384c8ec50e6 | /usr/bin/gzip >> ./program/private/backups/20260730_173007-program-database.sql.gz
+
+Backup Summary for program at 2026-07-30 17:30:08.057048
+Config  : ./program/private/backups/20260730_173007-program-site_config_backup.json 94.0B
+Database: ./program/private/backups/20260730_173007-program-database.sql.gz         250.2KiB
+Backup for Site program has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_3d92a384c8ec50e6 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3d92a384c8ec50e6 | /usr/bin/gzip >> ./program/private/backups/20260731_113007-program-database.sql.gz
+
+Backup Summary for program at 2026-07-31 11:30:08.506831
+Config  : ./program/private/backups/20260731_113007-program-site_config_backup.json 94.0B
+Database: ./program/private/backups/20260731_113007-program-database.sql.gz         259.1KiB
+Backup for Site program has been successfully completed
