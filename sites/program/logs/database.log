@@ -2836,3 +2836,7 @@ index modified(modified))
 			COLLATE=utf8mb4_unicode_ci
 2026-08-05 06:28:36,210 WARNING database DDL Query made to DB:
 ALTER TABLE `tabText Document` ADD COLUMN `description` varchar(140)
+2026-08-05 08:26:19,244 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-08-05 08:29:36,870 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
