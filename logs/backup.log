@@ -10,3 +10,16 @@ Backup Summary for program at 2026-07-31 11:30:08.506831
 Config  : ./program/private/backups/20260731_113007-program-site_config_backup.json 94.0B
 Database: ./program/private/backups/20260731_113007-program-database.sql.gz         259.1KiB
 Backup for Site program has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_3d92a384c8ec50e6 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3d92a384c8ec50e6 | /usr/bin/gzip >> ./program/private/backups/20260731_173002-program-database.sql.gz
+
+Backup Summary for program at 2026-07-31 17:30:03.322934
+Config  : ./program/private/backups/20260731_173002-program-site_config_backup.json 94.0B
+Database: ./program/private/backups/20260731_173002-program-database.sql.gz         262.1KiB
+Backup for Site program has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_3d92a384c8ec50e6 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3d92a384c8ec50e6 | /usr/bin/gzip >> ./program/private/backups/20260804_113005-program-database.sql.gz
+
+Backup Summary for program at 2026-08-04 11:30:05.945194
+Config  : ./program/private/backups/20260804_113005-program-site_config_backup.json 94.0B
+Database: ./program/private/backups/20260804_113005-program-database.sql.gz         262.1KiB
+Backup for Site program has been successfully completed
+/bin/sh: 1: /home/kailai/.local/bin/bench: not found

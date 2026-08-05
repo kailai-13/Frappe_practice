@@ -25,3 +25,6 @@ Form Dict: {'doc': '{"name":"1egta1orq2","owner":"Administrator","creation":"202
 2026-07-31 05:56:55,331 ERROR frappe New Exception collected in error log
 Site: program
 Form Dict: {'doc': '{"name":"1egta1orq2","owner":"Administrator","creation":"2026-07-30 15:57:07.256611","modified":"2026-07-31 11:17:07.973347","modified_by":"Administrator","docstatus":0,"idx":0,"child_name":"kaifqrffe","parent1":"9mmi0mjmm1","parent_full_name":"eg","parent_age":0,"doctype":"C doc","a_and_n":[],"list_all_info":[{"name":"1egvl010gp","owner":"Administrator","creation":"2026-07-30 15:57:07.256611","modified":"2026-07-31 11:17:07.973347","modified_by":"Administrator","docstatus":0,"idx":1,"age":0,"enable":0,"parent":"1egta1orq2","parentfield":"list_all_info","parenttype":"C doc","doctype":"c p list"}],"__last_sync_on":"2026-07-31T05:56:53.338Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-08-05 06:38:09,976 ERROR frappe New Exception collected in error log
+Site: program
+Form Dict: {'doc': '{"docstatus":0,"doctype":"ToDo","name":"new-todo-hedzdadqxo","__islocal":1,"__unsaved":1,"owner":"Administrator","status":"Open","priority":"Medium","date":"2026-08-05","__run_link_triggers":1,"description":"<div class=\\"ql-editor read-mode\\"><p>fwf</p></div>"}', 'cmd': 'frappe.client.save'}
