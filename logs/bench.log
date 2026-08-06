@@ -150,3 +150,7 @@
 2026-08-06 09:18:58,881 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench watch
 2026-08-06 09:18:58,884 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench worker
 2026-08-06 09:18:58,892 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench schedule
+2026-08-06 09:37:43,325 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench hello-app
+2026-08-06 09:37:53,423 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench hello_app
+2026-08-06 09:38:01,342 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench hello_app
+2026-08-06 09:38:04,592 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench hello-app
