@@ -23,3 +23,4 @@ Config  : ./program/private/backups/20260804_113005-program-site_config_backup.j
 Database: ./program/private/backups/20260804_113005-program-database.sql.gz         262.1KiB
 Backup for Site program has been successfully completed
 /bin/sh: 1: /home/kailai/.local/bin/bench: not found
+/bin/sh: 1: /home/kailai/.local/bin/bench: not found

@@ -2840,3 +2840,23 @@ ALTER TABLE `tabText Document` ADD COLUMN `description` varchar(140)
 alter table `tabDocType` add column if not exists migration_hash varchar(140)
 2026-08-05 08:29:36,870 WARNING database DDL Query made to DB:
 alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-08-06 05:42:28,279 WARNING database DDL Query made to DB:
+create table `tabdemo_summa` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-06 05:42:46,343 WARNING database DDL Query made to DB:
+ALTER TABLE `tabdemo_summa` ADD COLUMN `first_name` varchar(140)
