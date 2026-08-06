@@ -1,0 +1,9 @@
+{
+ "db_name": "_c1a0aff65fc9271e",
+ "db_password": "zAh9EEt7Ij1gLIIN",
+ "db_type": "mariadb",
+ "domains": [
+  "internal.testsite.local"
+ ],
+ "port":82
+}

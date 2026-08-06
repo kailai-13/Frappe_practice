@@ -2,6 +2,7 @@
  "background_workers": 1,
  "default_site": "program",
  "developer_mode": 1,
+ "dns_multitenant": false,
  "file_watcher_port": 6788,
  "frappe_user": "kailai",
  "gunicorn_workers": 17,

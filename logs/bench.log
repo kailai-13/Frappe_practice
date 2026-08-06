@@ -110,3 +110,43 @@
 2026-08-06 05:40:56,446 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench watch
 2026-08-06 05:40:56,462 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench worker
 2026-08-06 05:40:56,464 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench schedule
+2026-08-06 06:19:21,627 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --help
+2026-08-06 06:21:20,596 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench demo_com
+2026-08-06 07:41:06,591 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench config dns_multitenant off
+2026-08-06 07:41:34,038 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench new-site testsite.local
+2026-08-06 08:06:48,900 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site testsite.local add-custom-domain internal.testsite.local
+2026-08-06 08:07:05,158 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site testsite.local add-domain internal.testsite.local
+2026-08-06 08:07:28,209 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench setup add-domain internal.testsite.local
+2026-08-06 08:07:53,168 WARNING /home/kailai/.pyenv/versions/3.12.13/bin/bench setup add-domain internal.testsite.local executed with exit code 1
+2026-08-06 08:07:57,033 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench setup add-domain internal.testsite.local
+2026-08-06 08:08:34,508 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench setup nginx
+2026-08-06 08:43:07,792 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site coding backup --with-files appscodingcodingpublic
+2026-08-06 08:43:47,583 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site coding backup --with-files [apps/coding/coding/public]
+2026-08-06 08:43:52,795 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site coding backup --with-files apps/coding/coding/public
+2026-08-06 08:44:42,390 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site coding backup --with-files
+2026-08-06 08:44:54,159 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site coding backup --with-files
+2026-08-06 08:45:13,864 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench list-sites
+2026-08-06 08:45:41,418 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site program backup --with-files
+2026-08-06 08:46:30,030 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site program migrate
+2026-08-06 08:46:58,894 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site program migrate
+2026-08-06 08:47:35,758 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench start
+2026-08-06 08:47:36,035 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench schedule
+2026-08-06 08:47:36,037 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench serve --port 8001
+2026-08-06 08:47:36,038 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench socketio
+2026-08-06 08:47:36,051 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench watch
+2026-08-06 08:47:36,055 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench worker
+2026-08-06 08:47:40,767 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site program migrate
+2026-08-06 08:49:44,625 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site program restore [200~sitesprogramprivatebackups20260806_141542-program-database.sql.gz~
+2026-08-06 08:52:37,656 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site program restore sites/program/private/backups/20260806_141542-program-database.sql.gz --with-private-files sites/program/private/backups/20260806_141542-program-private-files.tar --with-public-files sites/program/private/backups/20260806_141542-program-files.tar
+2026-08-06 09:17:50,857 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench start
+2026-08-06 09:17:51,126 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench worker
+2026-08-06 09:17:51,132 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench serve --port 8001
+2026-08-06 09:17:51,137 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench socketio
+2026-08-06 09:17:51,139 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench watch
+2026-08-06 09:17:51,155 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench schedule
+2026-08-06 09:18:58,634 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench start
+2026-08-06 09:18:58,872 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench socketio
+2026-08-06 09:18:58,876 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench serve --port 8001
+2026-08-06 09:18:58,881 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench watch
+2026-08-06 09:18:58,884 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench worker
+2026-08-06 09:18:58,892 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench schedule

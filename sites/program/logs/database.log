@@ -2860,3 +2860,29 @@ index modified(modified))
 			COLLATE=utf8mb4_unicode_ci
 2026-08-06 05:42:46,343 WARNING database DDL Query made to DB:
 ALTER TABLE `tabdemo_summa` ADD COLUMN `first_name` varchar(140)
+2026-08-06 08:47:41,707 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-08-06 08:52:45,637 WARNING database DDL Query made to DB:
+DROP USER IF EXISTS '_3d92a384c8ec50e6'@'localhost'
+2026-08-06 08:52:49,305 WARNING database DDL Query made to DB:
+DROP DATABASE IF EXISTS `_3d92a384c8ec50e6`
+2026-08-06 08:52:49,308 WARNING database DDL Query made to DB:
+CREATE USER '_3d92a384c8ec50e6'@'localhost' IDENTIFIED BY 'fnttDMhjcsDrG0Mh'
+2026-08-06 08:52:49,309 WARNING database DDL Query made to DB:
+CREATE DATABASE `_3d92a384c8ec50e6` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+2026-08-06 08:52:58,033 WARNING database DDL Query made to DB:
+create table if not exists `__Auth` (
+				`doctype` VARCHAR(140) NOT NULL,
+				`name` VARCHAR(255) NOT NULL,
+				`fieldname` VARCHAR(140) NOT NULL,
+				`password` TEXT NOT NULL,
+				`encrypted` INT(1) NOT NULL DEFAULT 0,
+				PRIMARY KEY (`doctype`, `name`, `fieldname`)
+			) ENGINE=InnoDB ROW_FORMAT=DYNAMIC CHARACTER SET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+2026-08-06 08:52:58,036 WARNING database DDL Query made to DB:
+create table if not exists __UserSettings (
+			`user` VARCHAR(180) NOT NULL,
+			`doctype` VARCHAR(180) NOT NULL,
+			`data` TEXT,
+			UNIQUE(user, doctype)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
