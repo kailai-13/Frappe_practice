@@ -163,3 +163,9 @@
 2026-08-07 05:32:52,199 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site your-site export-fixtures
 2026-08-07 05:33:04,854 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site programming export-fixtures
 2026-08-07 05:33:09,163 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site program export-fixtures
+2026-08-07 06:55:10,284 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench start
+2026-08-07 06:55:10,625 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench socketio
+2026-08-07 06:55:10,631 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench schedule
+2026-08-07 06:55:10,661 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench serve --port 8001
+2026-08-07 06:55:10,674 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench worker
+2026-08-07 06:55:10,693 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench watch
