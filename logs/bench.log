@@ -154,3 +154,12 @@
 2026-08-06 09:37:53,423 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench hello_app
 2026-08-06 09:38:01,342 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench hello_app
 2026-08-06 09:38:04,592 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench hello-app
+2026-08-07 05:17:34,435 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench start
+2026-08-07 05:17:34,691 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench worker
+2026-08-07 05:17:34,701 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench socketio
+2026-08-07 05:17:34,731 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench serve --port 8001
+2026-08-07 05:17:34,734 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench schedule
+2026-08-07 05:17:34,738 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench watch
+2026-08-07 05:32:52,199 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site your-site export-fixtures
+2026-08-07 05:33:04,854 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site programming export-fixtures
+2026-08-07 05:33:09,163 INFO /home/kailai/.pyenv/versions/3.12.13/bin/bench --site program export-fixtures
