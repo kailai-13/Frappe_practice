@@ -40,3 +40,10 @@ Form Dict: {'task': 'esf', 'cmd': 'coding.api.call_function'}
 2026-08-05 11:06:06,433 ERROR frappe New Exception collected in error log
 Site: program
 Form Dict: {'task_subject': 'fffw', 'cmd': 'coding.api.call_function'}
+2026-08-10 08:13:51,896 ERROR frappe New Exception collected in error log
+Site: program
+Form Dict: {'doctype': 'DocType', 'name': 'demo_summa', 'format': 'Standard', 'no_letterhead': '1', 'letterhead': 'No Letterhead', 'settings': '{}', '_lang': 'en', 'cmd': 'frappe.utils.print_format.download_pdf', 'pdf_generator': 'wkhtmltopdf'}
+2026-08-10 08:14:01,392 ERROR frappe Error while inserting deferred Error Log record: Error Log kmt9k35rc7: 'Title' (No wkhtmltopdf executable found: "b''"
+If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf) will get truncated, as max characters allowed is 140
+Site: program
+Form Dict: {}
