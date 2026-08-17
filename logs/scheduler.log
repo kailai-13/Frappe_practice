@@ -1,4 +1,396 @@
-2026-07-31 05:10:25,244 ERROR scheduler Exception in Enqueue Events for Site program
+2026-08-17 05:56:50,956 ERROR scheduler Exception in Enqueue Events for Site program
+Traceback (most recent call last):
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
+    if job_type.enqueue():
+       ^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 567, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 572, in get_job_status
+    job = get_job(job_id)
+          ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 579, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 989, in refresh
+    data = self.connection.hgetall(self.key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/commands/core.py", line 4887, in hgetall
+    return self.execute_command("HGETALL", name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1457, in get_connection
+    connection.connect()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11001. Connection refused.
+2026-08-17 05:57:51,167 ERROR scheduler Exception in Enqueue Events for Site program
+Traceback (most recent call last):
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
+    if job_type.enqueue():
+       ^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 567, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 572, in get_job_status
+    job = get_job(job_id)
+          ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 579, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 989, in refresh
+    data = self.connection.hgetall(self.key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/commands/core.py", line 4887, in hgetall
+    return self.execute_command("HGETALL", name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1457, in get_connection
+    connection.connect()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11001. Connection refused.
+2026-08-17 05:58:51,252 ERROR scheduler Exception in Enqueue Events for Site program
+Traceback (most recent call last):
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
+    if job_type.enqueue():
+       ^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 567, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 572, in get_job_status
+    job = get_job(job_id)
+          ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 579, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 989, in refresh
+    data = self.connection.hgetall(self.key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/commands/core.py", line 4887, in hgetall
+    return self.execute_command("HGETALL", name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1457, in get_connection
+    connection.connect()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11001. Connection refused.
+2026-08-17 05:59:51,469 ERROR scheduler Exception in Enqueue Events for Site program
+Traceback (most recent call last):
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
+    if job_type.enqueue():
+       ^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 567, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 572, in get_job_status
+    job = get_job(job_id)
+          ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 579, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 989, in refresh
+    data = self.connection.hgetall(self.key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/commands/core.py", line 4887, in hgetall
+    return self.execute_command("HGETALL", name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1457, in get_connection
+    connection.connect()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11001. Connection refused.
+2026-08-17 06:00:51,646 ERROR scheduler Exception in Enqueue Events for Site program
+Traceback (most recent call last):
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
+    if job_type.enqueue():
+       ^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 567, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 572, in get_job_status
+    job = get_job(job_id)
+          ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 579, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 989, in refresh
+    data = self.connection.hgetall(self.key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/commands/core.py", line 4887, in hgetall
+    return self.execute_command("HGETALL", name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1457, in get_connection
+    connection.connect()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11001. Connection refused.
+2026-08-17 06:01:51,798 ERROR scheduler Exception in Enqueue Events for Site program
+Traceback (most recent call last):
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
+    if job_type.enqueue():
+       ^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 567, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 572, in get_job_status
+    job = get_job(job_id)
+          ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 579, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 989, in refresh
+    data = self.connection.hgetall(self.key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/commands/core.py", line 4887, in hgetall
+    return self.execute_command("HGETALL", name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1457, in get_connection
+    connection.connect()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11001. Connection refused.
+2026-08-17 06:02:51,899 ERROR scheduler Exception in Enqueue Events for Site program
+Traceback (most recent call last):
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
+    if job_type.enqueue():
+       ^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 567, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 572, in get_job_status
+    job = get_job(job_id)
+          ^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 579, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 989, in refresh
+    data = self.connection.hgetall(self.key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/commands/core.py", line 4887, in hgetall
+    return self.execute_command("HGETALL", name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1457, in get_connection
+    connection.connect()
+  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11001. Connection refused.
+2026-08-17 06:04:52,454 ERROR scheduler Exception in Enqueue Events for Site program
 Traceback (most recent call last):
   File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1463, in get_connection
     if connection.can_read():
@@ -66,62 +458,6 @@ Traceback (most recent call last):
     conn = self.connection or pool.get_connection(command_name, **options)
                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1467, in get_connection
-    connection.connect()
-  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11001. Connection refused.
-2026-07-31 05:11:29,792 ERROR scheduler Exception in Enqueue Events for Site program
-Traceback (most recent call last):
-  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-           ^^^^
-  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-            ^^^^^^^^^^^^^^^
-  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/kailai/demo/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-       ^^^^^^^^^^^^^^^^^^
-  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/kailai/demo/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 567, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 572, in get_job_status
-    job = get_job(job_id)
-          ^^^^^^^^^^^^^^^
-  File "/home/kailai/demo/apps/frappe/frappe/utils/background_jobs.py", line 579, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/kailai/demo/env/lib/python3.12/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 1457, in get_connection
     connection.connect()
   File "/home/kailai/demo/env/lib/python3.12/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
