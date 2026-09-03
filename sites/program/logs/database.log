@@ -2908,3 +2908,5 @@ index modified(modified))
 ALTER TABLE `tabArticle` ADD COLUMN `name1` varchar(140), ADD COLUMN `title` varchar(140), ADD COLUMN `status` varchar(140)
 2026-08-17 06:13:01,069 WARNING database DDL Query made to DB:
 alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-08-25 10:13:01,826 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)

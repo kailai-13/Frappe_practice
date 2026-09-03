@@ -10804,3 +10804,115 @@
 Retrieving Routes                   : [=                                       ] 3%Retrieving Routes                   : [==                                      ] 6%Retrieving Routes                   : [===                                     ] 9%Retrieving Routes                   : [====                                    ] 12%Retrieving Routes                   : [======                                  ] 15%Retrieving Routes                   : [=======                                 ] 18%Retrieving Routes                   : [========                                ] 21%Retrieving Routes                   : [=========                               ] 24%Retrieving Routes                   : [==========                              ] 27%Retrieving Routes                   : [============                            ] 30%Retrieving Routes                   : [=============                           ] 33%Retrieving Routes                   : [==============                          ] 36%Retrieving Routes                   : [===============                         ] 39%Retrieving Routes                   : [================                        ] 42%Retrieving Routes                   : [==================                      ] 45%Retrieving Routes                   : [===================                     ] 48%Retrieving Routes                   : [====================                    ] 51%Retrieving Routes                   : [=====================                   ] 54%Retrieving Routes                   : [=======================                 ] 57%Retrieving Routes                   : [========================                ] 60%Retrieving Routes                   : [=========================               ] 63%Retrieving Routes                   : [==========================              ] 66%Retrieving Routes                   : [===========================             ] 69%Retrieving Routes                   : [=============================           ] 72%Retrieving Routes                   : [==============================          ] 75%Retrieving Routes                   : [===============================         ] 78%Retrieving Routes                   : [================================        ] 81%Retrieving Routes                   : [=================================       ] 84%Retrieving Routes                   : [===================================     ] 87%Retrieving Routes                   : [====================================    ] 90%Retrieving Routes                   : [=====================================   ] 93%Retrieving Routes                   : [======================================  ] 96%Retrieving Routes                   : [========================================] 100%
 Building Index                      : [=                                       ] 3%Building Index                      : [==                                      ] 6%Building Index                      : [===                                     ] 9%Building Index                      : [====                                    ] 12%Building Index                      : [======                                  ] 15%Building Index                      : [=======                                 ] 18%Building Index                      : [========                                ] 21%Building Index                      : [=========                               ] 24%Building Index                      : [==========                              ] 27%Building Index                      : [============                            ] 30%Building Index                      : [=============                           ] 33%Building Index                      : [==============                          ] 36%Building Index                      : [===============                         ] 39%Building Index                      : [================                        ] 42%Building Index                      : [==================                      ] 45%Building Index                      : [===================                     ] 48%Building Index                      : [====================                    ] 51%Building Index                      : [=====================                   ] 54%Building Index                      : [=======================                 ] 57%Building Index                      : [========================                ] 60%Building Index                      : [=========================               ] 63%Building Index                      : [==========================              ] 66%Building Index                      : [===========================             ] 69%Building Index                      : [=============================           ] 72%Building Index                      : [==============================          ] 75%Building Index                      : [===============================         ] 78%Building Index                      : [================================        ] 81%Building Index                      : [=================================       ] 84%Building Index                      : [===================================     ] 87%Building Index                      : [====================================    ] 90%Building Index                      : [=====================================   ] 93%Building Index                      : [======================================  ] 96%Building Index                      : [========================================] 100%2026-08-17 06:13:11,639 home-kailai-demo:long: Job OK (program::924b970c-02a0-4cff-81f2-91da1d2687cb)
 2026-08-17 06:13:11,639 Result is kept for 600 seconds
+2026-08-17 06:19:56,701 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 06:19:56,709 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 06:19:56,735 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 06:38:02,654 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 06:38:02,695 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 06:38:02,697 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 07:05:02,939 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 07:05:02,941 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 07:05:02,942 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 07:32:04,713 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 07:32:04,714 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 07:32:04,715 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 07:58:19,627 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 07:58:19,635 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 07:58:19,636 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 08:25:19,855 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 08:25:19,857 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 08:25:19,858 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 08:52:20,002 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 08:52:20,008 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 08:52:20,011 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 09:19:20,232 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 09:19:20,234 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 09:19:20,235 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 09:46:20,525 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 09:46:20,534 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 09:46:20,541 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 10:13:20,851 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 10:13:20,853 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 10:13:20,855 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 10:40:20,984 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 10:40:20,987 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 10:40:20,988 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 11:07:21,246 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 11:07:21,255 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 11:07:21,261 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 11:34:21,517 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 11:34:21,519 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 11:34:21,520 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 11:49:27,648 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 11:49:27,649 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 11:49:27,651 Cleaning registries for queue: home-kailai-demo:long
+2026-08-17 12:20:39,633 Cleaning registries for queue: home-kailai-demo:short
+2026-08-17 12:20:39,649 Cleaning registries for queue: home-kailai-demo:default
+2026-08-17 12:20:39,652 Cleaning registries for queue: home-kailai-demo:long
+2026-08-25 10:05:30,921 Worker rq:worker:5b1144020375488294a8cf928a95452c started with PID 46435, version 1.15.1
+2026-08-25 10:05:30,921 Subscribing to channel rq:pubsub:5b1144020375488294a8cf928a95452c
+2026-08-25 10:05:30,923 *** Listening on home-kailai-demo:short, home-kailai-demo:default, home-kailai-demo:long...
+2026-08-25 10:05:30,923 Cleaning registries for queue: home-kailai-demo:short
+2026-08-25 10:05:30,925 Cleaning registries for queue: home-kailai-demo:default
+2026-08-25 10:05:30,926 Cleaning registries for queue: home-kailai-demo:long
+2026-08-25 10:13:04,383 home-kailai-demo:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.build_index_for_all_routes', kwargs={}, method=<function build_index_for_all_routes at 0x7c30b9c33a60>, site='program', user='Administrator') (program::97cb9ae1-a7d1-4bb1-872b-75a39724a2e6)
+Retrieving Routes                   : [=                                       ] 3%Retrieving Routes                   : [==                                      ] 6%Retrieving Routes                   : [===                                     ] 9%Retrieving Routes                   : [====                                    ] 12%Retrieving Routes                   : [======                                  ] 15%Retrieving Routes                   : [=======                                 ] 18%Retrieving Routes                   : [========                                ] 21%Retrieving Routes                   : [=========                               ] 24%Retrieving Routes                   : [==========                              ] 27%Retrieving Routes                   : [============                            ] 30%Retrieving Routes                   : [=============                           ] 33%Retrieving Routes                   : [==============                          ] 36%Retrieving Routes                   : [===============                         ] 39%Retrieving Routes                   : [================                        ] 42%Retrieving Routes                   : [==================                      ] 45%Retrieving Routes                   : [===================                     ] 48%Retrieving Routes                   : [====================                    ] 51%Retrieving Routes                   : [=====================                   ] 54%Retrieving Routes                   : [=======================                 ] 57%Retrieving Routes                   : [========================                ] 60%Retrieving Routes                   : [=========================               ] 63%Retrieving Routes                   : [==========================              ] 66%Retrieving Routes                   : [===========================             ] 69%Retrieving Routes                   : [=============================           ] 72%Retrieving Routes                   : [==============================          ] 75%Retrieving Routes                   : [===============================         ] 78%Retrieving Routes                   : [================================        ] 81%Retrieving Routes                   : [=================================       ] 84%Retrieving Routes                   : [===================================     ] 87%Retrieving Routes                   : [====================================    ] 90%Retrieving Routes                   : [=====================================   ] 93%Retrieving Routes                   : [======================================  ] 96%Retrieving Routes                   : [========================================] 100%
+Building Index                      : [=                                       ] 3%Building Index                      : [==                                      ] 6%Building Index                      : [===                                     ] 9%Building Index                      : [====                                    ] 12%Building Index                      : [======                                  ] 15%Building Index                      : [=======                                 ] 18%Building Index                      : [========                                ] 21%Building Index                      : [=========                               ] 24%Building Index                      : [==========                              ] 27%Building Index                      : [============                            ] 30%Building Index                      : [=============                           ] 33%Building Index                      : [==============                          ] 36%Building Index                      : [===============                         ] 39%Building Index                      : [================                        ] 42%Building Index                      : [==================                      ] 45%Building Index                      : [===================                     ] 48%Building Index                      : [====================                    ] 51%Building Index                      : [=====================                   ] 54%Building Index                      : [=======================                 ] 57%Building Index                      : [========================                ] 60%Building Index                      : [=========================               ] 63%Building Index                      : [==========================              ] 66%Building Index                      : [===========================             ] 69%Building Index                      : [=============================           ] 72%Building Index                      : [==============================          ] 75%Building Index                      : [===============================         ] 78%Building Index                      : [================================        ] 81%Building Index                      : [=================================       ] 84%Building Index                      : [===================================     ] 87%Building Index                      : [====================================    ] 90%Building Index                      : [=====================================   ] 93%Building Index                      : [======================================  ] 96%Building Index                      : [========================================] 100%2026-08-25 10:13:11,372 home-kailai-demo:long: Job OK (program::97cb9ae1-a7d1-4bb1-872b-75a39724a2e6)
+2026-08-25 10:13:11,372 Result is kept for 600 seconds
+2026-08-25 10:25:43,433 Worker 5b1144020375488294a8cf928a95452c [PID 46435]: warm shut down requested
+2026-08-25 10:25:43,434 Unsubscribing from channel rq:pubsub:5b1144020375488294a8cf928a95452c
+2026-08-31 10:23:22,898 Worker rq:worker:0a9b11cf78064277bf8db5d199c26b0c started with PID 34489, version 1.15.1
+2026-08-31 10:23:22,899 Subscribing to channel rq:pubsub:0a9b11cf78064277bf8db5d199c26b0c
+2026-08-31 10:23:22,903 *** Listening on home-kailai-demo:short, home-kailai-demo:default, home-kailai-demo:long...
+2026-08-31 10:23:22,905 Cleaning registries for queue: home-kailai-demo:short
+2026-08-31 10:23:22,909 Cleaning registries for queue: home-kailai-demo:default
+2026-08-31 10:23:22,912 Cleaning registries for queue: home-kailai-demo:long
+2026-08-31 10:23:25,916 Worker 0a9b11cf78064277bf8db5d199c26b0c [PID 34489]: warm shut down requested
+2026-08-31 10:23:25,918 Unsubscribing from channel rq:pubsub:0a9b11cf78064277bf8db5d199c26b0c
+2026-08-31 10:23:41,850 Worker rq:worker:e1acb31e2a72424eaa7e7b1e323cb41b started with PID 34677, version 1.15.1
+2026-08-31 10:23:41,850 Subscribing to channel rq:pubsub:e1acb31e2a72424eaa7e7b1e323cb41b
+2026-08-31 10:23:41,853 *** Listening on home-kailai-demo:short, home-kailai-demo:default, home-kailai-demo:long...
+2026-08-31 10:23:46,686 Worker e1acb31e2a72424eaa7e7b1e323cb41b [PID 34677]: warm shut down requested
+2026-08-31 10:23:46,696 Unsubscribing from channel rq:pubsub:e1acb31e2a72424eaa7e7b1e323cb41b
+2026-08-31 10:24:22,007 Worker rq:worker:91158ceb9ded4b9b9a3abc369a0b2b65 started with PID 34871, version 1.15.1
+2026-08-31 10:24:22,007 Subscribing to channel rq:pubsub:91158ceb9ded4b9b9a3abc369a0b2b65
+2026-08-31 10:24:22,009 *** Listening on home-kailai-demo:short, home-kailai-demo:default, home-kailai-demo:long...
+2026-08-31 10:24:23,096 Worker 91158ceb9ded4b9b9a3abc369a0b2b65 [PID 34871]: warm shut down requested
+2026-08-31 10:24:23,100 Unsubscribing from channel rq:pubsub:91158ceb9ded4b9b9a3abc369a0b2b65
+2026-08-31 10:24:37,869 Worker rq:worker:5b54f42d208440f39ac9cc93ad3eb1bd started with PID 35059, version 1.15.1
+2026-08-31 10:24:37,869 Subscribing to channel rq:pubsub:5b54f42d208440f39ac9cc93ad3eb1bd
+2026-08-31 10:24:37,871 *** Listening on home-kailai-demo:short, home-kailai-demo:default, home-kailai-demo:long...
+2026-08-31 10:24:39,034 Worker 5b54f42d208440f39ac9cc93ad3eb1bd [PID 35059]: warm shut down requested
+2026-08-31 10:24:39,036 Unsubscribing from channel rq:pubsub:5b54f42d208440f39ac9cc93ad3eb1bd
+2026-08-31 10:25:22,900 Worker rq:worker:99586548c10f4c2facd9710a470aad7b started with PID 35253, version 1.15.1
+2026-08-31 10:25:22,901 Subscribing to channel rq:pubsub:99586548c10f4c2facd9710a470aad7b
+2026-08-31 10:25:22,902 *** Listening on home-kailai-demo:short, home-kailai-demo:default, home-kailai-demo:long...
+2026-08-31 10:25:23,914 Worker 99586548c10f4c2facd9710a470aad7b [PID 35253]: warm shut down requested
+2026-08-31 10:25:23,916 Unsubscribing from channel rq:pubsub:99586548c10f4c2facd9710a470aad7b
+2026-08-31 10:27:38,975 Worker rq:worker:c67b5d3e0eab4479902b391334976419 started with PID 1142, version 1.15.1
+2026-08-31 10:27:38,976 Subscribing to channel rq:pubsub:c67b5d3e0eab4479902b391334976419
+2026-08-31 10:27:38,980 *** Listening on home-kailai-demo:short, home-kailai-demo:default, home-kailai-demo:long...
+2026-08-31 10:27:41,944 Worker c67b5d3e0eab4479902b391334976419 [PID 1142]: warm shut down requested
+2026-08-31 10:27:41,946 Unsubscribing from channel rq:pubsub:c67b5d3e0eab4479902b391334976419
+2026-08-31 10:28:48,753 Worker rq:worker:2dbefc91c62045ae80780b5a808fbb4b started with PID 1413, version 1.15.1
+2026-08-31 10:28:48,753 Subscribing to channel rq:pubsub:2dbefc91c62045ae80780b5a808fbb4b
+2026-08-31 10:28:48,754 *** Listening on home-kailai-demo:short, home-kailai-demo:default, home-kailai-demo:long...
+2026-08-31 10:28:49,998 Worker 2dbefc91c62045ae80780b5a808fbb4b [PID 1413]: warm shut down requested
+2026-08-31 10:28:50,000 Unsubscribing from channel rq:pubsub:2dbefc91c62045ae80780b5a808fbb4b
+2026-08-31 10:29:42,811 Worker rq:worker:60c4191defe54ffaa6a30ced4c65951d started with PID 1639, version 1.15.1
+2026-08-31 10:29:42,811 Subscribing to channel rq:pubsub:60c4191defe54ffaa6a30ced4c65951d
+2026-08-31 10:29:42,813 *** Listening on home-kailai-demo:short, home-kailai-demo:default, home-kailai-demo:long...
+2026-08-31 10:35:23,271 Worker 60c4191defe54ffaa6a30ced4c65951d [PID 1639]: warm shut down requested
+2026-09-03 08:51:08,725 Worker rq:worker:4eb0d0c9a4ab46fbb2d579c8d2b455f1 started with PID 30077, version 1.15.1
+2026-09-03 08:51:08,725 Subscribing to channel rq:pubsub:4eb0d0c9a4ab46fbb2d579c8d2b455f1
+2026-09-03 08:51:08,727 *** Listening on home-kailai-demo:short, home-kailai-demo:default, home-kailai-demo:long...
+2026-09-03 08:51:08,727 Cleaning registries for queue: home-kailai-demo:short
+2026-09-03 08:51:08,729 Cleaning registries for queue: home-kailai-demo:default
+2026-09-03 08:51:08,730 Cleaning registries for queue: home-kailai-demo:long
+2026-09-03 08:51:09,570 Worker 4eb0d0c9a4ab46fbb2d579c8d2b455f1 [PID 30077]: warm shut down requested
+2026-09-03 08:51:09,572 Unsubscribing from channel rq:pubsub:4eb0d0c9a4ab46fbb2d579c8d2b455f1
+2026-09-03 08:51:12,326 Worker rq:worker:15c93499b32d46899d5577b3c3e608e8 started with PID 30262, version 1.15.1
+2026-09-03 08:51:12,327 Subscribing to channel rq:pubsub:15c93499b32d46899d5577b3c3e608e8
+2026-09-03 08:51:12,328 *** Listening on home-kailai-demo:short, home-kailai-demo:default, home-kailai-demo:long...
+2026-09-03 08:51:12,872 Worker 15c93499b32d46899d5577b3c3e608e8 [PID 30262]: warm shut down requested
+2026-09-03 08:51:12,873 Unsubscribing from channel rq:pubsub:15c93499b32d46899d5577b3c3e608e8
